@@ -8,14 +8,14 @@ public class Orders {
 	private Long customer_id; 
 	private String order_date;
 	private Double total_cost;
-	private int order_quantity;
-	public Orders(Long order_id, Long customer_id, String order_date, Double total_cost, int order_quantity) {
+
+	public Orders(Long order_id, Long customer_id, String order_date, Double total_cost) {
 		super();
 		this.order_id = order_id;
 		this.customer_id = customer_id;
 		this.order_date = order_date;
 		this.total_cost = total_cost;
-		this.order_quantity = order_quantity;
+		
 	}
 	public Long getOrder_id() {
 		return order_id;
@@ -41,20 +41,16 @@ public class Orders {
 	public void setTotal_cost(Double total_cost) {
 		this.total_cost = total_cost;
 	}
-	public int getOrder_quantity() {
-		return order_quantity;
-	}
-	public void setOrder_quantity(int order_quantity) {
-		this.order_quantity = order_quantity;
-	}
+	
+	
 	@Override
 	public String toString() {
 		return "Orders [order_id=" + order_id + ", customer_id=" + customer_id + ", order_date=" + order_date
-				+ ", total_cost=" + total_cost + ", order_quantity=" + order_quantity + "]";
+				+ ", total_cost=" + total_cost + "]";
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(customer_id, order_date, order_id, order_quantity, total_cost);
+		return Objects.hash(customer_id, order_date, order_id, total_cost);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -66,8 +62,7 @@ public class Orders {
 			return false;
 		Orders other = (Orders) obj;
 		return Objects.equals(customer_id, other.customer_id) && Objects.equals(order_date, other.order_date)
-				&& Objects.equals(order_id, other.order_id) && order_quantity == other.order_quantity
-				&& Objects.equals(total_cost, other.total_cost);
+				&& Objects.equals(order_id, other.order_id) && Objects.equals(total_cost, other.total_cost);
 	}
 	
 	
