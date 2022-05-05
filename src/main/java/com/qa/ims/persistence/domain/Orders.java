@@ -64,6 +64,10 @@ public class Orders {
 		return Objects.equals(customer_id, other.customer_id) && Objects.equals(order_date, other.order_date)
 				&& Objects.equals(order_id, other.order_id) && Objects.equals(total_cost, other.total_cost);
 	}
+	public static void add(Orders modelFromResultSet) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 
