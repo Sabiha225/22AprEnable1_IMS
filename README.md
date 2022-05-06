@@ -63,6 +63,12 @@ However, despite this my database did not successfully connect to Eclipse.
 
 To ensure all the code and system is working as it should, a series of tests need to be run. 
 
+To run coverage: right click on the project > Coverage As > 2 JUnit Test 
+My coverage is shown below:
+
+![image](https://user-images.githubusercontent.com/103116778/167166656-1764ffc5-aad9-4f89-a4d8-c9818e86d86f.png)
+
+
 ### Unit Tests 
 
 Unit testing is a way of testing the smallest piece of code to ensure it is running correctly. To do this:
